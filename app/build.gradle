@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.android_compileSdkVersion
+    buildToolsVersion rootProject.android_buildToolsVersion
+    defaultConfig {
+        applicationId "com.lyw.weiyun"
+        minSdkVersion rootProject.android_minSdkVersion
+        targetSdkVersion rootProject.android_targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':modulelogin')
+    implementation project(':modulemain')
+    implementation project(':moudlehttp')
+    implementation project(':moudlepush')
+    implementation project(':moudlesrc')
+    implementation project(':modulemvp')
+    implementation project(':commonutils')
+}

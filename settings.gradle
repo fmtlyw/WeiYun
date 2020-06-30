@@ -1,0 +1,2 @@
+include ':app', ':modulelogin', ':modulemain', ':moudlepush', ':moudlehttp', ':moudlesrc', ':modulemvp', ':commonutils'
+rootProject.name='WeiYun'
