@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion rootProject.android_compileSdkVersion
     buildToolsVersion rootProject.android_buildToolsVersion
@@ -11,6 +11,12 @@ android {
 
         testInstrumentationRunner "android.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["moduleName": project.name]
+            }
+        }
     }
 
     buildTypes {
@@ -19,6 +25,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -26,4 +34,23 @@ dependencies {
     implementation project(':modulemvp')
     implementation project(':commonutils')
     implementation project(':moudlehttp')
+    implementation project(':moudlesrc')
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //router框架
+    api 'com.chenenyu.router:router:1.3.2'
+    annotationProcessor 'com.chenenyu.router:compiler:1.3.2'
+    //gif动图
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+
+    //bomb
+    api 'cn.bmob.android:bmob-sdk:3.7.8'
+    api "io.reactivex.rxjava2:rxjava:2.2.8"
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'com.squareup.okhttp3:okhttp:3.14.1'
+    api 'com.squareup.okio:okio:2.2.2'
+    api 'com.google.code.gson:gson:2.8.5'
 }
+

@@ -1,11 +1,13 @@
 package com.lyw.modulelogin.been;
 
+import cn.bmob.v3.BmobObject;
+
 /**
  * 功能描述:用户
  * Created on 2020/6/30.
  * @author lyw
  */
-public class UserInfo {
+public class UserInfo extends BmobObject {
     /**
      * 用户名
      */

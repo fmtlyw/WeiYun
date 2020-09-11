@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="src_font_t1">18sp</dimen>
+    <dimen name="src_font_t2">17sp</dimen>
+    <dimen name="src_font_t3">16sp</dimen>
+    <dimen name="src_font_t4">15sp</dimen>
+    <dimen name="src_font_t5">14sp</dimen>
+    <dimen name="src_font_t6">13sp</dimen>
+    <dimen name="src_font_t7">12sp</dimen>
+    <dimen name="src_font_t8">11sp</dimen>
+
+    <dimen name="src_font_24">24sp</dimen>
+    <dimen name="src_font_20">20sp</dimen>
+    <dimen name="src_font_18">18sp</dimen>
+    <dimen name="src_font_17">17sp</dimen>
+    <dimen name="src_font_16">16sp</dimen>
+    <dimen name="src_font_15">15sp</dimen>
+    <dimen name="src_font_14">14sp</dimen>
+    <dimen name="src_font_13">13sp</dimen>
+    <dimen name="src_font_12">12sp</dimen>
+    <dimen name="src_font_11">11sp</dimen>
+    <dimen name="src_font_10">10sp</dimen>
+    <dimen name="src_font_8">8sp</dimen>
+
+
+    <dimen name="src_popup_height_180">100dp</dimen>
+    <dimen name="src_popup_height_61">61dp</dimen>
+    <dimen name="src_popup_height_360">90dp</dimen>
+    <dimen name="src_popup_height_pad">15dp</dimen>
+    <dimen name="src_popup_height_land_180">100dp</dimen>
+    <dimen name="src_popup_height_land_360">180dp</dimen>
+    <dimen name="src_popup_height_land_720">300dp</dimen>
+    <dimen name="src_shade_14dp">14dp</dimen>
+    <dimen name="src_dialog_radius_10dp">10dp</dimen>
+    <dimen name="src_distance_margin8dp">8dp</dimen>
+    <dimen name="src_dialog_radius_15dp">15dp</dimen>
+    <dimen name="src_dialog_radius_5dp">5dp</dimen>
+
+</resources>

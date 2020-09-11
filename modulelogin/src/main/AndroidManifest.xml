@@ -2,6 +2,17 @@
     package="com.lyw.modulelogin" >
 
     <application>
-        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".verify.VerifyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="behind" />
     </application>
 </manifest>

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-
 /**
  * 功能描述:Mvp Activity基类
  * Created on 2020/6/29.
